@@ -1,6 +1,9 @@
 argcomplete==1.10.0
+asgiref==3.3.1
 beautifulsoup4==4.8.0
 chardet==3.0.4
+Django==3.1.6
+django-core==1.4.1
 docx2txt==0.8
 EbookLib==0.17.1
 extract-msg==0.23.1
@@ -17,6 +20,7 @@ six==1.12.0
 sortedcontainers==2.3.0
 soupsieve==2.2
 SpeechRecognition==3.8.1
+sqlparse==0.4.1
 textract==1.6.3
 tzlocal==1.5.1
 Wand==0.6.5
