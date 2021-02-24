@@ -1,6 +1,11 @@
 env/
 .DS_Store
 *migrations/
+<<<<<<< HEAD
+=======
+.vscode/
+
+>>>>>>> b3aa12ca0f428db7b60fdb0548d17c5056a5bb49
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

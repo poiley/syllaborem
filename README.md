@@ -1,4 +1,6 @@
 # :open_book: Syllaborem
+[![Django CI](https://github.com/poiley/syllaborem/actions/workflows/django.yml/badge.svg?branch=master)](https://github.com/poiley/syllaborem/actions/workflows/django.yml)
+
 Syllaborem is a Django web app who's goal is to turn your Syllabus into something more pleasant.
 
 ## :inbox_tray: Installation
