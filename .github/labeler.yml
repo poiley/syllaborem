@@ -26,9 +26,13 @@ web:
 tests:
   - 'tests/*'
   - 'tests/**/*'
+  - '(tests|test)'
  
 critical:
   - '(critical|urgent)'
+
+reader:
+  - '(Reader|reader)'
 
 automerge:
   - '*'
