@@ -23,7 +23,9 @@ docs:
 web:
   - web/**/*
  
- tests:
+tests:
   - tests/*
   - tests/**/*
  
+critical:
+    - '(critical|urgent)'
