@@ -11,6 +11,13 @@ pip install -r requirements.txt
 
 ## :hammer_and_wrench: Usage
 
+Running the Web Server
+```bash
+python manage.py runserver
+```
+
+Reading PDF files:
+
 ```python
 from apps import reader
 
