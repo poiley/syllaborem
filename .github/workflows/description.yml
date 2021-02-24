@@ -2,15 +2,14 @@ name: "PR Description Update"
 on: [pull_request]
 
 jobs:
-	triage:
-		runs-on: ubuntu-latest
-		steps:
-		- uses: riskledger/update-pr-description@dev
-			with:
-				body: |+4\n
-					Several lines of text,\n
-					Several lines\n
-					And Several lines\n
-					It's Several lines of text.\n
-					This should be the default description for a PR\n
-				token: ${{ secrets.GITHUB_TOKEN }}
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: riskledger/update-pr-description@dev
+      with:
+        body: |+4\n
+          Several lines of text,\n
+          Several lines\n
+          And Several lines\n
+          It's Several lines of text.
+        token: ${{ secrets.GITHUB_TOKEN }}
