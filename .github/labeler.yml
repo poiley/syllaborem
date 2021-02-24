@@ -1,31 +1,31 @@
 javascript:
-  - **/*.js
-  - static/js/*
+  - '**/*.js'
+  - 'static/js/*'
   
 html:
-  - **/*.html
-  - templates/*
+  - '**/*.html'
+  - 'templates/*'
   
 css:
-  - **/*.css
-  - static/css/*
+  - '**/*.css'
+  - 'static/css/*'
   
 python:
-  - **/*.py
-  - *.py
-  - apps/reader/*
+  - '**/*.py'
+  - '*.py'
+  - 'apps/reader/*'
   
 docs:
-  - docs/
-  - **/*.md
-  - *.md
+  - 'docs/'
+  - '**/*.md'
+  - '*.md'
 
 web:
-  - web/**/*
+  - 'web/**/*'
  
 tests:
-  - tests/*
-  - tests/**/*
+  - 'tests/*'
+  - 'tests/**/*'
  
 critical:
     - '(critical|urgent)'
