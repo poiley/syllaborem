@@ -26,4 +26,4 @@ class Reader:
 
                 return file_contents
             elif file_extension == 'txt':
-                return "textract.process(file_dir)"
+                return "text"
