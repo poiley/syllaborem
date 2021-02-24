@@ -13,6 +13,7 @@ __all__ = [ basename(f)[:-3] for f in modules if isfile(f) and not f.endswith('_
 
 '''importing PDF reading library'''
 import textract
+import pdfplumber
 
 FILETYPES = ['pdf']
 
