@@ -1,7 +1,7 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
 
-from django.contrib.auth.models import User as u
-class User(u):
+class User(AbstractUser):
     def __init__(self, username="", email="", password=""):
         self.username = username
         self.email = email
