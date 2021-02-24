@@ -33,3 +33,7 @@ critical:
 automerge:
   - '*'
   - '**/*'
+  
+devops:
+  - '.github/*'
+  - '.github/**/*'
