@@ -16,6 +16,11 @@ Running the Web Server
 python manage.py runserver
 ```
 
+Compiling (?)
+```bash
+python manage.py makemigrations user 
+```
+
 Reading PDF files:
 
 ```python
