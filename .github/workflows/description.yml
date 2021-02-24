@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: riskledger/update-pr-description@dev
       with:
-        body: |+4\n
+        body: >
           Several lines of text,\n
           Several lines\n
           And Several lines\n
