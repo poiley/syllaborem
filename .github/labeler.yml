@@ -1,0 +1,29 @@
+javascript:
+  - **/*.js
+  - static/js/*
+  
+html:
+  - **/*.html
+  - templates/*
+  
+css:
+  - **/*.css
+  - static/css/*
+  
+python:
+  - **/*.py
+  - *.py
+  - apps/reader/*
+  
+docs:
+  - docs/
+  - **/*.md
+  - *.md
+
+web:
+  - web/**/*
+ 
+ tests:
+  - tests/*
+  - tests/**/*
+ 
