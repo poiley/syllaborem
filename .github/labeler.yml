@@ -28,4 +28,8 @@ tests:
   - 'tests/**/*'
  
 critical:
-    - '(critical|urgent)'
+  - '(critical|urgent)'
+
+automerge:
+  - '*'
+  - '**/*'
