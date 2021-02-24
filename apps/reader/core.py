@@ -1,4 +1,4 @@
-from . import FILETYPES, pdfplumber, textract, os
+from . import FILETYPES, pdfplumber, os
 
 class Reader:
     def __init__(self):
@@ -26,4 +26,4 @@ class Reader:
 
                 return file_contents
             elif file_extension == 'txt':
-                return textract.process(file_dir)
+                return "text"
