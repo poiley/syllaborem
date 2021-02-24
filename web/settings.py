@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,6 +28,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# CRISPY FORMS
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# EMAIL
+LOGIN_REDIRECT_URL = 'index'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 
 # Application definition
 
@@ -37,6 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.user.apps.UserConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -51,10 +66,12 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'web.urls'
 
+SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(SETTINGS_PATH[:-4], 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
