@@ -1,10 +1,6 @@
 from django.test import TestCase
 from apps.user.models import User as UserClass
 
-
-# import pdb;
-# pdb.set_trace()
-
 class UserTestCase(TestCase):
     def setUp(self):
         self.user1 = UserClass.objects.create(username='chris_falken')
