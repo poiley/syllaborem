@@ -1,7 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-class User(AbstractUser):
+class CustomUser(AbstractUser):
+    
     def __init__(self, *args, **kwargs):
         super().__init__(*args,**kwargs)
 
