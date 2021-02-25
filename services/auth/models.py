@@ -140,8 +140,6 @@ class UserProfile(models.Model):
     #    "current" avatar as a foreign key in User or UserProfile.
     avatar_url = models.CharField(max_length=256, blank=True, null=True)
 
-    dob = models.DateField(verbose_name="dob", blank=True, null=True)
-
     def __str__(self):
         return force_text(self.user.email)
 
