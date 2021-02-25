@@ -23,9 +23,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-SOCIAL_AUTH_GITHUB_KEY = '98eeeb46a8da92535b9d'
-SOCIAL_AUTH_GITHUB_SECRET = os.environ.get("SOCIAL_AUTH_GITHUB_SECRET")
-
 # Application definition
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -153,7 +150,6 @@ SOCIALACCOUNT_PROVIDERS = {
         'AUTH_PARAMS': { 'access_type': 'online' }
     },
     'github': {
-        'SCOPE': ['profile', 'email'],
-        'METHOD': 'oauth2'
+        'SCOPE': ['user'],
     }
 }
