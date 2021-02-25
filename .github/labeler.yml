@@ -13,7 +13,7 @@ css:
 python:
   - '**/*.py'
   - '*.py'
-  - 'apps/reader/*'
+  - 'services/reader/*'
   
 docs:
   - 'docs/'
