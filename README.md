@@ -11,6 +11,14 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install depende
 pip install -r requirements.txt
 ```
 
+For React Development:
+```bash
+cd web
+yarn add node-sass
+npm i 
+npm start
+```
+
 ## :hammer_and_wrench: Usage
 
 Running the Web Server

@@ -3,9 +3,10 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from django.conf.urls.static import static
 from django.conf import settings  
+from django.urls import path
 
 from .auth.views import account_profile
-from .views import member_index, member_action
+from .views import member_index, member_action, GoogleLogin
 
 urlpatterns = [
     # Landing page area
@@ -24,4 +25,7 @@ urlpatterns = [
 
     # Usual Django admin
     url(r'^admin/', admin.site.urls),
+
+    path('rest-auth/google/', GoogleLogin.as_view(), name='google_login')
+
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
