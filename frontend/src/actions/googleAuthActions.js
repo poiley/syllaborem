@@ -41,6 +41,7 @@ const convertGoogTokenFailure = err => ({
 
 // the API endpoint expects form-urlencoded-data thus search-params
 function convertGoogleToken(access_token) {
+  console.log(access_token)
   return async function(dispatch) {
     dispatch(isAuthenticating());
     const searchParams = new URLSearchParams();

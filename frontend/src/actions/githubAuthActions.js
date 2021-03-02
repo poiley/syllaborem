@@ -36,7 +36,7 @@ function sendGithubCode(code) {
   return async function(dispatch) {
     dispatch(isSendingGithubCode());
     try {
-      let response = await fetch(`${url}/githubcode/`, {
+      let response = await fetch(`${url}/github/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

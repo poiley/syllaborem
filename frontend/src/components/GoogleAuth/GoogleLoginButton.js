@@ -9,7 +9,7 @@ const GoogleLoginButton = props => {
       localStorage.setItem("goog_name", response.profileObj.name);
       localStorage.setItem("goog_email", response.profileObj.email);
     }
-    props.convertGoogleToken(response.Zi.access_token);
+    props.convertGoogleToken(response.accessToken);
   };
   const responseGoogleFailure = response => {
     console.log(response);
