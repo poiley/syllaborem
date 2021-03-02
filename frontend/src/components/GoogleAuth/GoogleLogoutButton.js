@@ -8,7 +8,7 @@ class GoogleLogoutButton extends Component {
     gapi.load("auth2", () => {
       this.auth2 = gapi.auth2.init({
         client_id:
-          "254472747355-6umtrkcedqn00tg7ec17l705ftttam0r.apps.googleusercontent.com"
+          "93796587378-pp46t96tr2gi4g91enrtn6o0pb63okr6.apps.googleusercontent.com"
       });
     });
   }
